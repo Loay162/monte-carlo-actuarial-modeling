@@ -17,10 +17,10 @@ $$S = \sum_{i=1}^{N} X_i$$
 | Actuarial Metric | Estimated Value | Economic Interpretation |
 | :--- | :---: | :--- |
 | **Expected Annual Loss ($\mathbb{E}[S]$)** | **€205,253** | Portfolio annual pure premium |
-| **$\text{VaR}_{99.5\%}$ (Solvency II)** | **€321,835** | 1-in-200-year maximum loss threshold |
-| **95% Bootstrap CI for $\text{VaR}_{99.5\%}$** | **[€319,958 ; €323,414]** | Tail quantile estimator stability ($\pm 0.5\%$) |
-| **Implied SCR ($\text{VaR}_{99.5\%} - \mathbb{E}[S]$)** | **€116,582** | Required regulatory economic capital |
-| **$\text{TVaR}_{99.5\%}$ (Expected Shortfall)** | **€340,142** | Conditional tail expectation in the worst $0.5\%$ scenarios |
+| **VaR<sub>99.5%</sub> (Solvency II)** | **€321,835** | 1-in-200-year maximum loss threshold |
+| **95% Bootstrap CI for VaR<sub>99.5%</sub>** | **[€319,958 ; €323,414]** | Tail quantile estimator stability ($\pm 0.5\%$) |
+| **Implied SCR (VaR<sub>99.5%</sub> − $\mathbb{E}[S]$)** | **€116,582** | Required regulatory economic capital |
+| **TVaR<sub>99.5%</sub> (Expected Shortfall)** | **€340,142** | Conditional tail expectation in the worst 0.5% scenarios |
 
 ![Simulated Annual Loss Distribution](distribution_pertes.png)
 
@@ -28,7 +28,7 @@ $$S = \sum_{i=1}^{N} X_i$$
 
 Impact evaluation of a **+10% adverse shock** on each individual risk driver:
 
-| Stress Scenario | Stressed $\text{VaR}_{99.5\%}$ | Change vs. Baseline |
+| Stress Scenario | Stressed VaR<sub>99.5%</sub> | Change vs. Baseline |
 | :--- | :---: | :---: |
 | **Frequency Shock (+10% claim count, $\lambda = 55$)** | €349,940 | **+8.7%** |
 | **Severity Shock (+10% mean claim cost)** | €352,964 | **+9.7%** |
